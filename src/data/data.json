@@ -1,7 +1,7 @@
 [
   {
     "_id": 1,
-    "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg width=400px height=400px",
+    "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
     "title": "UniWhal",
     "description": "A unicorn and a narwhal nuzzling their horns",
     "keyword": "narwhal",
@@ -9,7 +9,7 @@
   },
   {
     "_id": 2,
-    "image_url": "https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=825&q=80",
+    "image_url": "https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=625&q=80",
     "title": "Rhino Family",
     "description": "Mother (or father) rhino with two babies",
     "keyword": "rhino",
@@ -25,7 +25,7 @@
   },
   {
     "_id": 4,
-    "image_url": "https://images.unsplash.com/photo-1518946222227-364f22132616?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4836a6fca62e7dce9324346bacfde085&auto=format&fit=crop&w=334&q=80",
+    "image_url": "https://images.unsplash.com/photo-1518946222227-364f22132616?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4836a6fca62e7dce9324346bacfde085&auto=format&fit=crop&w=434&q=80",
     "title": "UniLego",
     "description": "Lego figurine dressed in a unicorn outfit",
     "keyword": "unilego",
@@ -81,7 +81,7 @@
   },
   {
     "_id": 11,
-    "image_url": "https://www.tinselbox.com/wp-content/uploads/2018/03/I-BELIEVE-IN-UNICORNS-FREE-PRINTABLE-WATERCOLOR-7-of-1.jpg",
+    "image_url": "https://openclipart.org/image/400px/222469",
     "title": "Believe",
     "description": "I believe in unicorns, do you?",
     "keyword": "unicorn",
@@ -89,7 +89,7 @@
   },
   {
     "_id": 12,
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/220px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/420px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
     "title": "Markhor",
     "description": "These wild goats eat snakes, then secrete a foam that locals fight over for the antivemon properties -- how cool is that?",
     "keyword": "markhor",
@@ -97,7 +97,7 @@
   },
   {
     "_id": 13,
-    "image_url": "http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi",
+    "image_url": "http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-400wi",
     "title": "Baby markhor",
     "description": "Even the babies are adorable",
     "keyword": "markhor",
@@ -105,7 +105,7 @@
   },
   {
     "_id": 14,
-    "image_url": "https://images.unsplash.com/photo-1558560063-931ca9822a0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "image_url": "https://images.unsplash.com/photo-1558560063-931ca9822a0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=434&q=80",
     "title": "Mouflon",
     "description": "Those horns though",
     "keyword": "mouflon",
@@ -113,7 +113,7 @@
   },
   {
     "_id": 15,
-    "image_url": "https://images.unsplash.com/photo-1556890077-020ec300d5db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80",
+    "image_url": "https://images.unsplash.com/photo-1556890077-020ec300d5db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80",
     "title": "Addax",
     "description": "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
     "keyword": "addax",
@@ -129,7 +129,7 @@
   },
   {
     "_id": 17,
-    "image_url": "https://images.unsplash.com/photo-1514036783265-fba9577fc473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+    "image_url": "https://images.unsplash.com/photo-1514036783265-fba9577fc473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80",
     "title": "Happy Jackson's Chameleon",
     "description": "These are really common in Hawaii",
     "keyword": "chameleon",
@@ -145,7 +145,7 @@
   },
   {
     "_id": 19,
-    "image_url": "https://www.nps.gov/band/learn/nature/images/short-horned-lizard-open-mouth-18.jpg?maxwidth=650&autorotate=false",
+    "image_url": "https://www.nps.gov/band/learn/nature/images/short-horned-lizard-open-mouth-18.jpg?maxwidth=450&autorotate=false",
     "title": "Horned Lizard",
     "description": "Fave food: ants",
     "keyword": "lizard",

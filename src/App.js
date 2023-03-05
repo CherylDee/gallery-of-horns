@@ -20,32 +20,31 @@ class App extends React.Component {
       image_url: '',
       description: '',
       horns: '',
-      beasts: data,
+      beast: data,
      }
   }
 
   handleClick = (event) =>  {
     let selected = event.target.value;
-    let newData = data.filter(beasts => {
+    let newData = data.filter(beast => {
       if (selected === 'All') {
-        return beasts;
+        return beast;
       } else {
-        return beasts.horns === +selected
+        return beast.horns === +selected
       }
     })
     this.setState({
-      beasts: newData
+      beast: newData
     })
   }
 
 
-  handleOpenModal = (title, image_url, description, horns) => {
+  handleOpenModal = (title, image_url, description) => {
     this.setState ({
       showModal: true,
       title: title,
       image_url: image_url,
       description: description,
-      horns: horns,
     })
   }
    
@@ -69,10 +68,10 @@ class App extends React.Component {
           <option value="All">All</option>
         </Form.Select>
       </Form>
-      <Main data={this.state.beasts} 
+      <Main data={this.state.beast} 
       handleOpenModal={this.handleOpenModal}/>
 
-      <SelectedBeast selectedBeast={this.state.beasts} 
+      <SelectedBeast selectedBeast={this.state.beast} 
       title = {this.state.title}
       image_url={this.state.image_url} 
       description = {this.state.description} 

@@ -8,6 +8,10 @@
 .beast h3 {
     font-size: 2vw;
   }
+.beast h4 {
+  font-size: 1.7vw;
+  cursor: pointer;
+}
 
 .beast img {
   width: 100%;
@@ -22,10 +26,9 @@
 
 .beast p:last-of-type {
   padding-left: 1rem;
-  cursor: pointer;
 }
 
-.beast p:last-of-type:hover {
+.beast h4:hover {
   color: purple;
 }
 

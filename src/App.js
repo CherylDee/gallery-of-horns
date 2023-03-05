@@ -20,21 +20,21 @@ class App extends React.Component {
       image_url: '',
       description: '',
       horns: '',
-      beast: data,
+      beasts: data,
      }
   }
 
   handleClick = (event) =>  {
     let selected = event.target.value;
-    let newData = data.filter(beast => {
+    let newData = data.filter(beasts => {
       if (selected === 'All') {
-        return beast;
+        return beasts;
       } else {
-        return beast.horns === +selected
+        return beasts.horns === +selected
       }
     })
     this.setState({
-      beast: newData
+      beasts: newData
     })
   }
 
@@ -52,7 +52,6 @@ class App extends React.Component {
   handleCloseModal = () => {
     this.setState ({
       showModal: false,
-
     })
   }
 
@@ -62,6 +61,7 @@ class App extends React.Component {
       <Header />
       <Form>
         <Form.Select onChange = {this.handleClick}>
+          <option value="0">Select Horns</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -72,7 +72,7 @@ class App extends React.Component {
       <Main data={this.state.beasts} 
       handleOpenModal={this.handleOpenModal}/>
 
-      <SelectedBeast selectedBeast={this.state.beast} 
+      <SelectedBeast selectedBeast={this.state.beasts} 
       title = {this.state.title}
       image_url={this.state.image_url} 
       description = {this.state.description} 

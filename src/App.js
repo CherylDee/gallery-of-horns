@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import SelectedBeast from './SelectedBeast';
 import data from './data/data.json';
 import Form from 'react-bootstrap/Form';
 
@@ -10,7 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      beast: data,
+      beasts: data,
       showModal: false,
       selectedBeast: '',
       title: '',

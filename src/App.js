@@ -7,7 +7,6 @@ import HornedBeast from './HornedBeast';
 import SelectedBeast from './SelectedBeast';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
-import data from './data/data.json'
 
 
 class App extends React.Component {

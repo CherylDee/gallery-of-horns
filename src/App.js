@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
     <>
       <Header />
-      <Main />
+      <Main data={data}/>
       <HornedBeast />
       <Footer />
     </>

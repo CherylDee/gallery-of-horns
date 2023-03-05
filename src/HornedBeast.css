@@ -1,0 +1,34 @@
+.beast {
+  border: 1px solid gray;
+  padding: 1vw;
+  margin-bottom: 1vw;
+  width: 19%;
+}
+
+.beast h3 {
+    font-size: 2vw;
+  }
+
+.beast img {
+  width: 100%;
+}
+
+.beast p {
+  font-size: 11px;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.beast p:last-of-type {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.beast p:last-of-type:hover {
+  color: purple;
+}
+
+.beast-button {
+  margin: .2rem .1vw;
+}

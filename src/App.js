@@ -3,17 +3,18 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import HornedBeast from './HornedBeast';
 import SelectedBeast from './SelectedBeast';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import data from './data/data.json'
-
+import data from './data/data.json';
+import Form from 'react-bootstrap/Form';
 
 class App extends React.Component {
   constructor(props) {
-     super(props);
-     this.state =  {
+    super(props);
+    this.state = {
+      beast: data,
       showModal: false,
       selectedBeast: '',
       title: '',
@@ -52,6 +53,40 @@ class App extends React.Component {
     this.setState ({
       showModal: false,
     })
+
+      horns: ''
+    }
+  }
+
+  handleClick = (event) =>  {
+    let selected = event.target.value;
+    let newData = data.filter(beast => {
+      if (selected === 'All') {
+        return beast;
+      } else {
+        return beast.horns === +selected
+      }
+    })
+    this.setState({
+      beast: newData
+    })
+  }
+
+ 
+
+  handleOpenModal = (title, image_url, description, horns) => {
+    this.setState({
+      showModal: true,
+      title: title,
+      image_url: image_url,
+      horns: horns
+    });
+  }
+
+  handleCloseModal = () => {
+    this.setState({
+      showModal: false
+    });
   }
 
   render() {
@@ -68,6 +103,7 @@ class App extends React.Component {
           <option value="All">All</option>
         </Form.Select>
       </Form>
+
       <Main data={this.state.beast} 
       handleOpenModal={this.handleOpenModal}/>
 
@@ -81,12 +117,18 @@ class App extends React.Component {
 
       <HornedBeast />
       <Footer />
+        
+      <Main data={this.state.beast}
+        handleOpenModal={this.handleOpenModal}/>
 
-      <Modal 
-        show={this.state.showModal}
-        onHide={this.handleCloseModal}>
-
-    </Modal>
+      <SelectedBeast selectedBeast={this.state.beast}
+        title={this.state.title}
+        image_url={this.state.image_url}
+        description={this.state.description}
+        showModal={this.state.showModal}
+        handleCloseModal={this.handleCloseModal}/>
+      <Footer />
+      
     </>
     )
   }

@@ -12,8 +12,8 @@ class Main extends React.Component {
       <main>
       <title>Horned Beasts</title>
     
-      {data.map((beasts) => {
-        return <HornedBeast image_url = {beasts.image_url} alt= {beasts.alt} title = {beasts.title} description = {beasts.description} />
+      {data.map((beasts, idx) => {
+        return <HornedBeast image_url = {beasts.image_url} alt = {beasts.alt} title = {beasts.title} description = {beasts.description}  id = {beasts._id} key = {idx} display={this.props.handleOpenModal} horns = {beasts.horns}/>
       })}
      
       </main>

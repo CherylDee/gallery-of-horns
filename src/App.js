@@ -3,22 +3,25 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import HornedBeast from './HornedBeast';
 import SelectedBeast from './SelectedBeast';
-import data from './data/data.json';
+import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
+import data from './data/data.json'
+
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {
-      beast: data,
+     super(props);
+     this.state =  {
       showModal: false,
       selectedBeast: '',
       title: '',
       image_url: '',
       description: '',
-      horns: ''
-    }
+      horns: '',
+      beast: data,
+     }
   }
 
   handleClick = (event) =>  {
@@ -35,53 +38,20 @@ class App extends React.Component {
     })
   }
 
-  // handleClick = (event) => {
-  //   let selected = event.target.value
-  //   if (selected === "1") {
-  //     let newData = data.filter(beast => beast.horns === 1)
-  //     this.setState({
-  //       beast: newData
-  //     })
-  //   }
-  //   else if (selected === "2") {
-  //     let newData = data.filter(beast => beast.horns === 2)
-  //     this.setState({
-  //       beast: newData
-  //   })
-  // }
-  //   else if (selected === "3") {
-  //     let newData = data.filter(beast => beast.horns === 3)
-  //     this.setState({
-  //       beast: newData
-  //   })
-  // }
-  //   else if (selected === "100") {
-  //     let newData = data.filter(beast => beast.horns === 100)
-  //     this.setState({
-  //       beast: newData
-  //   })
-  // }
-  //   else if (selected === "All") {
-  //     this.setState({
-  //       beast: data
-  //   })
 
-  // }
-
-
-  handleOpenModal = (title, image_url, description, horns) => {
-    this.setState({
+  handleOpenModal = (title, image_url, description) => {
+    this.setState ({
       showModal: true,
       title: title,
       image_url: image_url,
-      horns: horns
-    });
+      description: description,
+    })
   }
-
+   
   handleCloseModal = () => {
-    this.setState({
-      showModal: false
-    });
+    this.setState ({
+      showModal: false,
+    })
   }
 
   render() {
@@ -90,6 +60,7 @@ class App extends React.Component {
       <Header />
       <Form>
         <Form.Select onChange = {this.handleClick}>
+          <option value="0">Select Horns</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -97,18 +68,25 @@ class App extends React.Component {
           <option value="All">All</option>
         </Form.Select>
       </Form>
-        
-      <Main data={this.state.beast}
-        handleOpenModal={this.handleOpenModal}/>
+      <Main data={this.state.beast} 
+      handleOpenModal={this.handleOpenModal}/>
 
-      <SelectedBeast selectedBeast={this.state.beast}
-        title={this.state.title}
-        image_url={this.state.image_url}
-        description={this.state.description}
-        showModal={this.state.showModal}
-        handleCloseModal={this.handleCloseModal}/>
+      <SelectedBeast selectedBeast={this.state.beast} 
+      title = {this.state.title}
+      image_url={this.state.image_url} 
+      description = {this.state.description} 
+      horns = {this.state.horns} 
+      openModal={this.state.showModal} 
+      closeModal = {this.state.handleCloseModal} />
+
+      <HornedBeast />
       <Footer />
-      
+
+      <Modal 
+        show={this.state.showModal}
+        onHide={this.handleCloseModal}>
+
+    </Modal>
     </>
     )
   }
